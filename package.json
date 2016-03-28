@@ -1,0 +1,20 @@
+{
+  "name": "sidenav",
+  "version": "1.0.0",
+  "description": "single page app with sidenav",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nacmonad",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-animate": "^1.5.0",
+    "angular-ui-router-styles": "0.0.6",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.1",
+    "jquery-smooth-scroll": "^1.7.2",
+    "ui-router": "^1.0.0-alpha0"
+  }
+}

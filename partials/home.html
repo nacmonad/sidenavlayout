@@ -1,0 +1,115 @@
+<style>
+
+.page-wrap {
+
+}
+
+video {
+	position:fixed;
+	left:0;
+	top:0;
+	background-size:cover;
+}
+
+.vid-overlay {
+	position:absolute;
+	min-width:100%;
+	min-height:100vh;
+	top:0;
+	margin:0;
+	padding:0;
+	z-index:1;
+}
+
+	#heroText {
+		font-family: 'Fira Sans', sans-serif;
+		position:relative;
+		padding-top:100px;
+		/*background-color: rgba(0,0,0,0.8);*/
+	}
+
+	#row0 {
+	height:1000px;
+	padding:0;
+
+}
+
+	#row1 {
+		position:relative;
+		min-width:100%;
+		background-color:#792626;
+		opacity:0.8;
+	}
+
+	#row2 {
+		position:relative;
+		min-width:100%;
+		background-color:#99165E;
+		opacity:0.9;
+	}
+
+	#row3 {
+		position:relative;
+		min-width:100%;
+		background-color:#792626;
+		opacity:0.95;
+
+	}
+
+	#row4 {
+			position:relative;
+			min-width:100%;
+			background-color:#501D39;
+			opacity:0.99;
+		}
+
+	
+</style>
+
+<div id = "row0" ng-style="{height:100+'vh'}" ng-cloak>
+	<!-- <div class = "vid-overlay"></div> -->
+	
+	<video loop muted autoplay ng-style="{opacity:0.8}">
+		<source src="video/stock00.mp4" type="video/mp4" >
+	</video>
+
+	<div id="heroText" class="text-center" ng-style="
+				{opacity:1, 
+				'z-index':1, 
+			     color:'white', 
+			     'min-width':100+'%',
+			     'min-height':100+'%',
+			     'margin-left':auto,
+			     'margin-right':auto
+			   	  }">
+			   	  <img src="img/hyper.svg" alt="">
+				<h1>functionlessaesthetics</h1>
+				<h4>webdesign • tutoring</h4>
+	</div>
+
+</div>
+
+<div id = "row1" ng-style="{'height': 100 +'vh'}"> 
+	<div class="container text-center">Hello World </div>
+</div>
+
+<div id = "row2" ng-style="{'height': 100 +'vh'}"> 
+	<div class="container text-center">Hello World </div>
+</div>
+
+<div id = "row3" ng-style="{'height': 100 +'vh'}"> 
+	<div class="container text-center">Hello World </div>
+</div>
+
+<div id = "row4" ng-style="{'height': 100 +'vh'}"> 
+	<div class="container text-center">Hello World </div>
+</div>
+
+<div class ="up-down" ng-style="{'color': homeActive == 0 ? '#363636' : '#fefefe', 'opacity':0.8 }" controller="sidebarController">
+		<i class = "fa fa-chevron-up" ng-click="scrollUp()"></i>
+		<i class = "fa fa-chevron-down" ng-click="scrollDown()"></i>
+</div>
+
+<script>
+	
+</script>
